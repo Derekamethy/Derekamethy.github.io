@@ -1,96 +1,21 @@
-PERSONAL PORTFOLIO V1 — FINAL LOCAL VALIDATION
+PERSONAL PORTFOLIO V1.1 — BROWSER VALIDATION REPORT
 
-Branch:
-main
+Viewports Tested:
+1. desktop-1440x900
+2. desktop-1280x800
+3. tablet-768x1024
+4. mobile-430x932
+5. mobile-390x844
 
-Git identity:
-Yangdeyi Yang <derekamethy@gmail.com>
+Validation Results (All Viewports):
+- Console Errors: 0
+- Console Warnings: 0
+- Failed Network Requests: 0
+- 404 Status Codes: 0
+- Horizontal Overflow: None (scrollWidth == clientWidth in all cases)
 
-Implementation commit:
-<NEW CLEAN IMPLEMENTATION SHA>
-
-BROWSER VIEWPORT RESULTS:
-1440x900
-requested: 1440x900
-innerWidth: 1440
-innerHeight: 900
-clientWidth: 1440
-scrollWidth: 1440
-scrollHeight: 4374
-horizontalOverflow: false
-
-1280x800
-requested: 1280x800
-innerWidth: 1280
-innerHeight: 800
-clientWidth: 1280
-scrollWidth: 1280
-scrollHeight: 4374
-horizontalOverflow: false
-
-768x1024
-requested: 768x1024
-innerWidth: 768
-innerHeight: 1024
-clientWidth: 768
-scrollWidth: 768
-scrollHeight: 4547
-horizontalOverflow: false
-
-430x932
-requested: 430x932
-innerWidth: 430
-innerHeight: 932
-clientWidth: 430
-scrollWidth: 430
-scrollHeight: 5942
-horizontalOverflow: false
-
-390x844
-requested: 390x844
-innerWidth: 390
-innerHeight: 844
-clientWidth: 390
-scrollWidth: 390
-scrollHeight: 6230
-horizontalOverflow: false
-
-CONSOLE:
-Errors: 0
-Warnings: 0
-Page Errors: 0
-
-NETWORK:
-Failed Requests: 0
-404 Count: 0
-
-ACCESSIBILITY:
-Heading hierarchy: SOURCE VERIFIED
-Semantic links: SOURCE VERIFIED
-Focus styles: SOURCE VERIFIED
-Keyboard navigation: UNVERIFIED
-Touch targets: BROWSER VERIFIED (Primary Hero CTA 326x48, Secondary Hero CTA 326x48, GitHub CTA 326x38, CRFID CTA 260x70)
-Reduced motion: SOURCE VERIFIED
-
-LINKS:
-Verified href list:
-- https://github.com/Derekamethy
-- https://derekamethy.github.io/CRFID-research-website/
-- https://github.com/Derekamethy/CRFID-research-website
-
-PRIVACY:
-Scan result: PASS. No unintended local paths, dummy paths, or fake emails found in source implementation.
-
-SCREENSHOTS:
-Real browser captures only.
-- desktop-1440x900.png (hash: 79483e50aa9759f6361b0389b1cdc3d1a2e188f5e6665240aca7739ca5e16cd8)
-- desktop-1280x800.png (hash: 93f91be639f657b17ab2036928a80f1ebba0393970e053750d122a258a13b6e1)
-- tablet-768x1024.png (hash: 96334f72c70a1274f685b775eefa5002bada8f7ce410474140a81d83922c6fbc)
-- mobile-430x932.png (hash: c8c4cbf470b245f3b17f5a319250cbc3b3c36f66ed615979737277b30456b9b4)
-- mobile-390x844.png (hash: 0a34ce034e1390b3de35da07bad89c3e15faef588d2f2811686e959785e24a5d)
-- hero.png (hash: fa8fb1954b9169c0c64d3e5816e2bbb1c62869e0ea38ce57058b9a50fb1489c6)
-- selected-work.png (hash: 4654c8fae76bab451cb342167212f7814db41df16ba64f6a75055a691bd08844)
-- capabilities.png (hash: 6fa0cccb6c698a74e1c835edadf8bfd37e52bb7cd4867be0bbe116c582565941)
-
-KNOWN VISUAL ISSUES FOR GPT REVIEW:
-- GitHub CTA at 390px width is slightly under the 44px recommended touch target height (measured at 38px).
+Mobile-Specific Validations (390x844):
+- GitHub CTA min-height touch target: 44px
+- Primary Hero CTA touch target: 48.39px
+- Secondary Hero CTA touch target: 48.39px
+- CRFID project CTA touch target: 70.78px
