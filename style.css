@@ -190,6 +190,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .link-subtle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
     font-size: 0.875rem;
     font-weight: 500;
     text-decoration: underline;
@@ -287,6 +291,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-content {
     margin-bottom: var(--space-md);
+}
+
+.flagship-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+    .flagship-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--space-lg);
+    }
+    
+    .flagship-text {
+        flex: 1;
+    }
+    
+    .flagship-visual {
+        flex: 1;
+    }
 }
 
 .project-info {
