@@ -1,6 +1,6 @@
 # Derek Yang - Personal Portfolio Landing Page
 
-This repository contains the source code for the personal portfolio landing page of Derek (Yangdeyi Yang). It serves as a navigation and identity layer above the detailed CRFID research case study.
+This repository contains the source code for the personal portfolio landing page of Derek (Yangdeyi Yang). It serves as a lightweight navigation and identity layer above the EEG and CRFID case-study websites.
 
 ## Project Architecture
 - Pure HTML5 semantic structure

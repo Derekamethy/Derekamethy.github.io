@@ -1,5 +1,7 @@
 # Web/static site ignore
 node_modules/
+.gpt-review/
+GPT_REVIEW_PACKET.md
 .DS_Store
 Thumbs.db
 .vscode/
