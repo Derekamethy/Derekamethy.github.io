@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Derek Yang - Research Engineer, Machine Learning, Signal Processing">
+    <title>Derek Yang | Research Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="nav-container">
+            <span class="nav-logo">Derek Yang</span>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <p class="hero-eyebrow">Derek Yang</p>
+                <h1 class="hero-title">Building machine-learning systems that survive contact with real physical data.</h1>
+                <p class="hero-subtitle">
+                    MSc Electronic & Electrical Engineering at UCC &bull; Research Intern at Tyndall National Institute.<br>
+                    Focusing on RF sensing, domain shift, ML evaluation, signal processing, and research engineering.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View Selected Work</a>
+                    <a href="https://derekamethy.github.io/CRFID-research-website/" class="btn btn-secondary">CRFID Research Case Study</a>
+                    <a href="https://github.com/Derekamethy" class="link-subtle" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-section">
+            <div class="container">
+                <h2 class="section-title">Selected Work</h2>
+                
+                <div class="project-card flagship">
+                    <div class="project-header">
+                        <span class="project-label">Project 01 (Flagship)</span>
+                        <h3 class="project-title">Chipless RFID Recognition Under Physical Distribution Shift</h3>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h4 class="info-title">Question</h4>
+                            <p>Can a model trained under familiar physical conditions recognise tags under a genuinely unseen measurement condition?</p>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="info-title">Work</h4>
+                            <ul class="info-list">
+                                <li>Strict domain-generalisation evaluation</li>
+                                <li>Leakage-aware experimental design</li>
+                                <li>Signal / representation diagnostics</li>
+                                <li>IRM / DANN / GroupDRO / Mixup hypothesis tests</li>
+                                <li>Few-shot target diagnostics</li>
+                                <li>Physics-informed OpenEMS investigation</li>
+                                <li>Reproducibility and audit governance</li>
+                            </ul>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="info-title">Conclusion</h4>
+                            <p>The task was learnable under familiar conditions, but transfer to the held physical condition fell close to chance. Tested source-only DG methods did not establish reliable improvement.</p>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://derekamethy.github.io/CRFID-research-website/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore Full Interactive Case Study &rarr;</a>
+                        <a href="https://github.com/Derekamethy/CRFID-research-website" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub Repository &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card secondary">
+                    <div class="project-header">
+                        <span class="project-label">Project 02</span>
+                        <h3 class="project-title">EEG Seizure Detection / Embedded ML</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Demonstrates signal processing, feature engineering, ML evaluation, and deployment-aware model design using the CHB-MIT EEG dataset.
+                        </p>
+                        <ul class="info-list compact">
+                            <li>Spectral &amp; synchrony feature engineering</li>
+                            <li>Patient-specific &amp; event-level evaluation</li>
+                            <li>Random Forest / classical ML</li>
+                            <li>Embedded deployment constraints (memory / latency)</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <span class="status-badge">Case study being prepared</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="capabilities" class="capabilities-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Capabilities</h2>
+                <div class="capabilities-grid">
+                    <div class="capability-group">
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li>PyTorch</li>
+                            <li>scikit-learn</li>
+                            <li>Deep Learning</li>
+                            <li>Domain Shift / Generalisation</li>
+                            <li>Few-shot Evaluation</li>
+                            <li>Statistical Model Comparison</li>
+                        </ul>
+                    </div>
+                    <div class="capability-group">
+                        <h3>Signal &amp; Data</h3>
+                        <ul>
+                            <li>Signal Processing</li>
+                            <li>RF Spectroscopy</li>
+                            <li>EEG Processing</li>
+                            <li>Feature Engineering</li>
+                            <li>Scientific Python</li>
+                            <li>Structured Experimental Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="capability-group">
+                        <h3>Research Engineering</h3>
+                        <ul>
+                            <li>Leakage-aware Evaluation</li>
+                            <li>Reproducibility</li>
+                            <li>Git-based Experiment Governance</li>
+                            <li>Ablation / Matched Controls</li>
+                            <li>Evidence Packaging</li>
+                            <li>Independent Audit Workflows</li>
+                        </ul>
+                    </div>
+                    <div class="capability-group">
+                        <h3>Engineering Tools</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>NumPy</li>
+                            <li>SciPy</li>
+                            <li>pandas</li>
+                            <li>Git</li>
+                            <li>Scientific Visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Research Approach &amp; About</h2>
+                
+                <div class="about-grid">
+                    <div class="approach-content">
+                        <h3>How I Work</h3>
+                        <dl class="approach-list">
+                            <dt>Problem Formulation</dt>
+                            <dd>Define what generalisation actually means before optimizing a model.</dd>
+                            
+                            <dt>Evaluation</dt>
+                            <dd>Separate genuine held-condition transfer from target-informed adaptation.</dd>
+                            
+                            <dt>Diagnosis</dt>
+                            <dd>Use controls, ablations, representation probes and physical evidence to understand failure.</dd>
+                            
+                            <dt>Engineering</dt>
+                            <dd>Keep experiments reproducible, auditable and traceable.</dd>
+                            
+                            <dt>Communication</dt>
+                            <dd>Turn a complex technical investigation into evidence that another researcher can inspect.</dd>
+                        </dl>
+                    </div>
+                    <div class="bio-content">
+                        <h3>About Derek</h3>
+                        <p>Derek Yang is completing an MSc in Electronic &amp; Electrical Engineering at University College Cork and has worked as a research intern at Tyndall National Institute.</p>
+                        <p>His recent work combines machine learning, signal processing and physical sensing, with particular attention to distribution shift, rigorous evaluation and reproducible research workflows.</p>
+                        <p>He is interested in research and engineering roles where ML must work with real-world signals rather than only benchmark datasets.</p>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-year">2026</span>
+                                <div class="timeline-info">
+                                    <strong>Research Intern</strong>
+                                    <span class="timeline-org">Tyndall National Institute</span>
+                                    <span class="timeline-meta">Chipless RFID sensing &bull; ML &bull; physical distribution shift</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2025&ndash;2026</span>
+                                <div class="timeline-info">
+                                    <strong>MSc Electronic &amp; Electrical Engineering</strong>
+                                    <span class="timeline-org">University College Cork</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">Bachelor</span>
+                                <div class="timeline-info">
+                                    <strong>Bachelor</strong>
+                                    <span class="timeline-org">Yancheng Institute of Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contact &amp; Links</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/Derekamethy" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-title">GitHub</span>
+                        <span class="link-url">github.com/Derekamethy</span>
+                    </a>
+                    <a href="https://derekamethy.github.io/CRFID-research-website/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-title">CRFID Flagship</span>
+                        <span class="link-url">derekamethy.github.io/CRFID-research-website/</span>
+                    </a>
+                </div>
+                
+                <div class="contact-placeholders">
+                    <p class="placeholder-note">
+                        <em>Email, LinkedIn, and CV download are currently omitted pending confirmation.</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Derek Yang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
