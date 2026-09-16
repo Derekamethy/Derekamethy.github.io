@@ -621,3 +621,16 @@ h1, h2, h3, h4, h5, h6 {
         padding: var(--space-md);
     }
 }
+
+
+/* Portfolio alignment and project-visual refinements */
+.project-image-contain { aspect-ratio: 16 / 10; object-fit: contain; background: var(--color-bg-main); }
+.flagship-visual { min-width: 0; }
+.contact-links { max-width: 900px; }
+.contact-link { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: var(--space-md); align-items: center; }
+.link-title { white-space: nowrap; }
+.link-url { min-width: 0; text-align: right; overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+    .contact-link { grid-template-columns: 1fr; gap: 0.35rem; }
+    .link-url { text-align: left; }
+}
