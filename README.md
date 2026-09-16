@@ -1,36 +1,20 @@
-# Derek Yang - Personal Portfolio
+# Derek Yang — Engineering Portfolio
 
-This repository contains the source for the personal portfolio of Derek (Yangdeyi Yang). It serves as a lightweight navigation and identity layer above three engineering/research case studies spanning machine learning, physiological signal processing, multirate DSP, and physical sensing.
+## → [Open the live portfolio](https://derekamethy.github.io/)
 
-## Selected work
+This repository is the deployment host for my public engineering portfolio. The portfolio is intended to be viewed through the live website above rather than browsed as a software project.
 
-- **CRFID Research Case Study** — chipless RFID recognition under physical distribution shift, with strict domain-generalisation evaluation, signal/representation diagnostics, and reproducible research evidence.
-- **EEG Seizure Detection Engineering Case Study (EE6019)** — patient-specific seizure-event detection from multichannel scalp EEG, including signal processing, classical ML, event-level evaluation, error analysis, and deployment-oriented profiling.
-- **EEG Multirate DSP Engineering Case Study (EE6041)** — specification-driven 500 Hz → 32 Hz resampling with anti-alias FIR design, polyphase optimisation, and quantitative spectral-preservation validation.
+The live site brings together three engineering/research case studies:
 
-## Project architecture
+- **CRFID Research Case Study** — chipless RFID recognition under physical distribution shift, strict domain-generalisation evaluation, and signal/representation diagnostics.
+- **EEG Seizure Detection (EE6019)** — multichannel scalp-EEG processing, patient-specific classical ML, event-level evaluation, error analysis, and deployment-oriented profiling.
+- **EEG Multirate DSP (EE6041)** — specification-driven 500 Hz → 32 Hz resampling, anti-alias FIR design, polyphase optimisation, and quantitative spectral-preservation validation.
 
-- Pure HTML5 semantic structure
-- Vanilla CSS styling with restrained, editorial design
-- Lightweight and fully static; hosted with GitHub Pages
-- No complex frontend framework required for the portfolio landing page
-- No Node/npm build process required
+## Project code
 
-## Deployment
+For implementation and reproducibility details, use the dedicated engineering repositories:
 
-The portfolio deploys natively via GitHub Pages.
+- [EEG seizure detection — research/engineering code](https://github.com/Derekamethy/eeg-seizure-detection)
+- [EEG multirate DSP — engineering code](https://github.com/Derekamethy/eeg-multirate-dsp)
 
-### Local development
-
-To preview locally, open `index.html` in a modern browser, or run:
-
-```bash
-python -m http.server
-```
-
-## Structure
-
-- `index.html` — portfolio content and links to the three selected case studies
-- `style.css` — styling, responsive rules, and layout
-- `assets/` — portfolio-local visual assets when required
-- `README.md` — repository overview
+The CRFID research-code release is being kept separate from the public case-study presentation until the research repository is ready for external release.
