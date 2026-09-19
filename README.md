@@ -10,7 +10,7 @@ The live site brings together four flagship engineering/research projects:
 - **EEG Seizure Detection (EE6019)** — multichannel scalp-EEG processing, patient-specific classical ML, event-level evaluation, error analysis, and deployment-oriented profiling.
 - **EEG Multirate DSP (EE6041)** — specification-driven 500 Hz → 32 Hz resampling, anti-alias FIR design, polyphase optimisation, and quantitative spectral-preservation validation.
 
-- **Eight-channel EEG simulator** — desktop waveform playback, virtual DAC mapping, mock-device interfaces and software-reference verification. Physical MCU/DAC/analogue hardware remains proposed.
+- **Eight-channel EEG simulator** — desktop and browser waveform playback, virtual DAC mapping, mock-device interfaces and software-reference verification, with a live interactive Streamlit console. Physical MCU/DAC/analogue hardware remains proposed.
 
 Supporting work includes patient-independent neonatal EEG detection and engineering hackathon concepts. The site also includes a [printable CV](https://derekamethy.github.io/cv.html).
 
