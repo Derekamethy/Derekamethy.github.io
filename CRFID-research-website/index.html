@@ -5,7 +5,7 @@
 <meta name="description" content="Yangdeyi Yang's Engineering ML case study: physical domain shift, rigorous evaluation and failure localisation in chipless RFID.">
 <meta name="author" content="Yangdeyi Yang"><meta name="theme-color" content="#f6f8f7">
 <title>Same tag. New geometry. | Yangdeyi Yang · Engineering ML</title>
-<link rel="icon" href="data:,">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://derekamethy.github.io/CRFID-research-website/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yangdeyi Yang - Engineering ML">
@@ -31,8 +31,8 @@
 <div class="hero-grid"><div class="hero-copy">
 <h1 id="hero-title">Same tag.<br>New geometry.<br><em>Different answer.</em></h1>
 <p class="hero-lead">Can a model recognise the same passive RFID tag when the physical measurement setup changes?</p>
-<p class="hero-contribution">I rebuilt the evaluation around an unseen reader geometry, established a near-chance transfer result, and traced the failure through the signal, learned representation and decision rule.</p>
-<div class="actions"><a class="button primary" href="#physical-problem">Follow the investigation ↓</a><a class="text-link" href="#conclusions">The 60-second takeaway ↗</a></div>
+<p class="hero-contribution">I reframed a familiar-geometry classification result as a deployment test, rebuilt evaluation around physical-condition groups and a source-only unseen geometry, then traced the near-chance transfer failure through the signal, learned representation and decision rule.</p>
+<div class="actions"><a class="button primary" href="#physical-problem">Follow the investigation ↓</a><a class="text-link" href="#conclusions">The 60-second takeaway ↗</a><a class="text-link" href="https://github.com/Derekamethy/CRFID">Code &amp; evidence ↗</a></div>
 </div>
 <figure class="geometry-figure">
 <div class="figure-top"><span>The missing corner</span><span>Reader geometry</span></div>
@@ -44,7 +44,7 @@
 <figcaption id="geometry-caption" aria-live="polite"><strong>P4 combines two familiar factors in an unseen way.</strong> P2 supplies the angle; P3 supplies the distance. Their joint corner stays outside source-only development.</figcaption>
 <div class="figure-bottom"><span>Select a position to inspect its role</span><a href="./assets/dissertation.pdf#page=31">Thesis §3.1.2 ↗</a></div>
 </figure></div>
-<dl class="dataset-strip"><div><dt>12,600</dt><dd>measured spectra</dd></div><div><dt>7</dt><dd>tag identities</dd></div><div><dt>4</dt><dd>physical domains</dd></div><div><dt>252</dt><dd>condition blocks</dd></div><div><dt>5</dt><dd>Strict-DG seeds</dd></div></dl>
+<dl class="dataset-strip"><div><dt>12,600</dt><dd>measured spectra</dd></div><div><dt>7</dt><dd>tag identities</dd></div><div><dt>252</dt><dd>condition blocks</dd></div><div><dt>3</dt><dd>source geometries</dd></div><div><dt>1</dt><dd>unseen joint target</dd></div></dl>
 <p class="credit-line">MEngSc research · Yangdeyi Yang · University College Cork / Tyndall National Institute. Analysis of an existing measurement campaign; my contribution is the ML evaluation and investigation.</p>
 </section>
 <div class="chapter-nav"><nav class="wrap" aria-label="Investigation chapters"><a href="#physical-problem">01 <span>Signal</span></a><a href="#evaluation-problem">02 <span>Question</span></a><a href="#strict-test">03 <span>Protocol</span></a><a href="#turning-point">04 <span>Failure</span></a><a href="#diagnostics">05 <span>Diagnosis</span></a><a href="#hypothesis-tests">06 <span>Interventions</span></a><a href="#conclusions">07 <span>Implications</span></a></nav></div>
