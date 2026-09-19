@@ -740,6 +740,17 @@ h1, h2, h3, h4, h5, h6 {
 .evidence-link { display:block; cursor:zoom-in; }
 .evidence-link img { transition:opacity var(--transition-fast); }
 .evidence-link:hover img { opacity:.96; }
+.skip-link { position:fixed; top:8px; left:12px; z-index:200; padding:12px; background:#fff; transform:translateY(-160%); }
+.skip-link:focus { transform:translateY(0); }
+a:focus-visible { outline:3px solid #b36a17; outline-offset:4px; }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 @media (max-width:768px) {
   .principle-grid { grid-template-columns:minmax(0,1fr); }
+  .nav-container { flex-wrap:wrap; padding:12px 20px 6px; gap:6px; }
+  .nav-links { display:flex; order:3; width:100%; justify-content:space-between; gap:8px; }
+  .nav-links a { display:inline-block; padding:10px 0; font-size:.75rem; }
+  .nav-external { display:flex; margin-left:auto; }
+  .nav-external a:first-child { display:inline; }
+  .nav-external a { font-size:.75rem; }
+  #problem,#pipeline,#filter,#validation { scroll-margin-top:130px; }
 }

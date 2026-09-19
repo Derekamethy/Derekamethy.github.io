@@ -1,278 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Derek Yang - Research Engineer, Machine Learning, Signal Processing">
-    <title>Derek Yang | Research Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yangdeyi Yang | Electrical and Electronic Engineering + ML</title>
+<meta name="description" content="Yangdeyi Yang — signal processing, sensor and biomedical machine learning, rigorous validation, and engineering prototypes.">
+<meta name="theme-color" content="#193540"><meta property="og:title" content="Yangdeyi Yang — Signals, systems & machine learning"><meta property="og:description" content="CRFID domain generalisation, EEG detection, multirate DSP and an eight-channel simulator."><meta property="og:type" content="website"><meta property="og:url" content="https://derekamethy.github.io/">
+<link rel="canonical" href="https://derekamethy.github.io/"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="site-nav">
-        <div class="nav-container">
-            <a class="nav-logo" href="#hero" aria-label="Derek Yang portfolio home">
-                <span class="nav-mark">DY</span>
-                <span>Derek Yang</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#capabilities">Capabilities</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <p class="hero-eyebrow">Derek Yang</p>
-                <h1 class="hero-title">Building machine-learning systems that survive contact with real physical data.</h1>
-                <p class="hero-subtitle">
-                    MSc Electronic & Electrical Engineering at UCC &bull; Research Intern at Tyndall National Institute.<br>
-                    Focusing on RF sensing, domain shift, ML evaluation, signal processing, and research engineering.
-                </p>
-                <div class="hero-actions">
-                    <a href="#work" class="btn btn-primary">View Selected Work</a>
-                    <a href="https://derekamethy.github.io/EEG-seizure-detection-website/" class="btn btn-secondary">EEG Engineering Case Study</a>
-                    <a href="https://derekamethy.github.io/CRFID-research-website/" class="btn btn-secondary">CRFID Research Case Study</a>
-                    <a href="https://github.com/Derekamethy" class="link-subtle" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="work-section">
-            <div class="container">
-                <h2 class="section-title">Selected Work</h2>
-                
-                <div class="project-card flagship" id="crfid-flagship">
-                    <div class="project-header">
-                        <span class="project-label">Project 01</span>
-                        <h3 class="project-title">Chipless RFID Recognition Under Physical Distribution Shift</h3>
-                    </div>
-                    <div class="flagship-layout">
-                        <div class="flagship-text">
-                            <div class="project-info">
-                                <h4 class="info-title">Question</h4>
-                                <p>Can a model trained under familiar physical conditions recognise tags under a genuinely unseen measurement condition?</p>
-                            </div>
-                            <div class="project-info">
-                                <h4 class="info-title">Work</h4>
-                                <ul class="info-list compact">
-                                    <li>Strict-DG &amp; leakage-aware evaluation</li>
-                                    <li>Representation and physical-shift diagnostics</li>
-                                    <li>DG / adaptation hypothesis testing</li>
-                                    <li>Reproducible research and audit governance</li>
-                                </ul>
-                            </div>
-                            <div class="project-info">
-                                <h4 class="info-title">Conclusion</h4>
-                                <p>The task was learnable under familiar conditions, but transfer to the held physical condition fell close to chance. Tested source-only DG methods did not establish reliable improvement.</p>
-                            </div>
-                        </div>
-                        <div class="flagship-visual">
-                            <img src="https://derekamethy.github.io/CRFID-research-website/assets/scientific/measured_spectra_same_tag_across_positions.png" alt="Measured CRFID spectra for the same tag across acquisition positions" class="project-image">
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://derekamethy.github.io/CRFID-research-website/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore Full Interactive Case Study &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="project-card flagship">
-                    <div class="project-header">
-                        <span class="project-label">Project 02</span>
-                        <h3 class="project-title">Patient-Specific EEG Seizure-Event Detection Under Engineering Constraints</h3>
-                    </div>
-                    <div class="flagship-layout">
-                        <div class="flagship-text">
-                            <div class="project-content">
-                        <p class="project-description">
-                            Traces scalp EEG from signal processing and compact feature engineering through patient-specific classical ML, event-level detection, and deployment feasibility.
-                        </p>
-                        <ul class="info-list compact">
-                            <li>Spectral, synchrony, and temporal feature engineering</li>
-                            <li>Patient-specific Random Forest with fold-local feature selection</li>
-                            <li>Event sensitivity, false alarms per hour, and detection delay</li>
-                            <li>Resource estimates and explicit streaming limitations</li>
-                        </ul>
-                    </div>
-                        </div>
-                        <div class="flagship-visual">
-                            <img src="https://derekamethy.github.io/EEG-seizure-detection-website/evidence/representative-scalp-eeg-seizure.png" alt="Representative multichannel scalp EEG seizure segment" class="project-image project-image-contain">
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://derekamethy.github.io/EEG-seizure-detection-website/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore EEG Engineering Case Study &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="project-card flagship">
-                    <div class="project-header">
-                        <span class="project-label">Project 03</span>
-                        <h3 class="project-title">EEG Multirate DSP with Polyphase FIR Optimisation</h3>
-                    </div>
-                    <div class="flagship-layout">
-                        <div class="flagship-text">
-                            <div class="project-content">
-                        <p class="project-description">
-                            Designs and validates an exact 500 Hz → 32 Hz EEG resampling chain with specification-driven anti-alias filtering and an efficient polyphase implementation.
-                        </p>
-                        <ul class="info-list compact">
-                            <li>8/125 rational multirate conversion with a 4,145-tap Kaiser FIR</li>
-                            <li>Direct-form versus polyphase numerical-equivalence validation</li>
-                            <li>~1000× theoretical FIR-operation reduction and ~119× measured median speed-up</li>
-                            <li>PSD, band-power, entropy, SEF95, and IWMF preservation checks</li>
-                        </ul>
-                    </div>
-                        </div>
-                        <div class="flagship-visual">
-                            <img src="https://derekamethy.github.io/eeg-multirate-dsp/assets/psd_preservation.png" alt="Power spectral density preservation before and after the multirate EEG pipeline" class="project-image project-image-contain">
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://derekamethy.github.io/eeg-multirate-dsp/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore DSP Engineering Case Study &rarr;</a>
-                        <a href="https://github.com/Derekamethy/eeg-multirate-dsp" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="capabilities" class="capabilities-section bg-light">
-            <div class="container">
-                <h2 class="section-title">Capabilities</h2>
-                <div class="capabilities-grid">
-                    <div class="capability-group">
-                        <h3>Machine Learning</h3>
-                        <ul>
-                            <li>PyTorch / scikit-learn</li>
-                            <li>Deep learning</li>
-                            <li>Domain shift &amp; generalisation</li>
-                            <li>Few-shot &amp; statistical evaluation</li>
-                        </ul>
-                    </div>
-                    <div class="capability-group">
-                        <h3>Signal &amp; Data</h3>
-                        <ul>
-                            <li>Signal processing</li>
-                            <li>RF spectroscopy</li>
-                            <li>EEG processing</li>
-                            <li>Scientific data analysis</li>
-                        </ul>
-                    </div>
-                    <div class="capability-group">
-                        <h3>Research Engineering</h3>
-                        <ul>
-                            <li>Leakage-aware evaluation</li>
-                            <li>Reproducible experiment design</li>
-                            <li>Ablations &amp; matched controls</li>
-                            <li>Git-based research governance</li>
-                        </ul>
-                    </div>
-                    <div class="capability-group">
-                        <h3>Engineering</h3>
-                        <ul>
-                            <li>Python scientific stack</li>
-                            <li>Git</li>
-                            <li>Scientific visualisation</li>
-                            <li>Deployment-aware ML</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">Research Approach &amp; About</h2>
-                
-                <div class="about-grid">
-                    <div class="approach-content">
-                        <h3>How I Work</h3>
-                        <dl class="approach-list">
-                            <dt>Problem Formulation</dt>
-                            <dd>Define what generalisation actually means before optimizing a model.</dd>
-                            
-                            <dt>Evaluation</dt>
-                            <dd>Separate genuine held-condition transfer from target-informed adaptation.</dd>
-                            
-                            <dt>Diagnosis</dt>
-                            <dd>Use controls, ablations, representation probes and physical evidence to understand failure.</dd>
-                            
-                            <dt>Engineering</dt>
-                            <dd>Keep experiments reproducible, auditable and traceable.</dd>
-                            
-                            <dt>Communication</dt>
-                            <dd>Turn a complex technical investigation into evidence that another researcher can inspect.</dd>
-                        </dl>
-                    </div>
-                    <div class="bio-content">
-                        <h3>About Me</h3>
-                        <p>I am completing an MSc in Electronic &amp; Electrical Engineering at University College Cork, and during my MSc I worked as a research intern at Tyndall National Institute.</p>
-                        <p>My recent work combines machine learning, signal processing and physical sensing, with particular attention to distribution shift, rigorous evaluation and reproducible research workflows.</p>
-                        <p>I am particularly interested in research and engineering roles where machine learning must work reliably with real-world signals, physical variation and practical deployment constraints rather than only benchmark datasets.</p>
-                        
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-year">2026</span>
-                                <div class="timeline-info">
-                                    <strong>Research Intern</strong>
-                                    <span class="timeline-org">Tyndall National Institute</span>
-                                    <span class="timeline-meta">Chipless RFID sensing &bull; ML &bull; physical distribution shift</span>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-year">2025&ndash;2026</span>
-                                <div class="timeline-info">
-                                    <strong>MSc Electronic &amp; Electrical Engineering</strong>
-                                    <span class="timeline-org">University College Cork</span>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-year">Bachelor</span>
-                                <div class="timeline-info">
-                                    <strong>Bachelor's Degree</strong>
-                                    <span class="timeline-org">Yancheng Institute of Technology</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section bg-light">
-            <div class="container">
-                <h2 class="section-title">Contact &amp; Links</h2>
-                <div class="contact-links">
-                    <a href="https://github.com/Derekamethy" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <span class="link-title">GitHub</span>
-                        <span class="link-url">github.com/Derekamethy</span>
-                    </a>
-                    <a href="https://derekamethy.github.io/EEG-seizure-detection-website/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <span class="link-title">EEG Case Study</span>
-                        <span class="link-url">derekamethy.github.io/EEG-seizure-detection-website/</span>
-                    </a>
-                    <a href="https://derekamethy.github.io/CRFID-research-website/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <span class="link-title">CRFID Case Study</span>
-                        <span class="link-url">derekamethy.github.io/CRFID-research-website/</span>
-                    </a>
-                    <a href="https://derekamethy.github.io/eeg-multirate-dsp/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <span class="link-title">DSP Case Study</span>
-                        <span class="link-url">derekamethy.github.io/eeg-multirate-dsp/</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Derek Yang. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="#hero" aria-label="Yangdeyi Yang portfolio home"><span class="brand-mark" aria-hidden="true">dy.</span>Yangdeyi Yang</a><nav aria-label="Main navigation"><a href="#work">Projects</a><a href="#capabilities">Approach</a><a href="#about">About</a><a href="cv.html">CV</a><a href="#contact">Contact</a></nav></div></header>
+<main id="main">
+<section class="hero container" id="hero" aria-labelledby="hero-title">
+<div><p class="eyebrow">Electrical and Electronic Engineering + ML</p><h1 id="hero-title">Signals, systems &amp;<br><span>machine learning.</span></h1><p class="hero-intro">I turn sensor data into tested engineering systems: from signal processing and experimental design to modelling, failure analysis and software prototypes.</p><p class="hero-meta">Yangdeyi Yang · Cork, Ireland<br>MEngSc candidate, UCC · Research experience at Tyndall</p><div class="actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button" href="cv.html">View CV</a><a class="text-link" href="https://github.com/Derekamethy">GitHub ↗</a></div></div>
+<aside class="project-index" aria-label="Project quick links"><p class="eyebrow">Four engineering investigations</p>
+<a href="#crfid-flagship"><span class="index-number">01</span><span><strong>When the sensor setup changes</strong><small>CRFID · Domain generalisation</small></span><span aria-hidden="true">↗</span></a>
+<a href="#eeg"><span class="index-number">02</span><span><strong>From EEG to seizure events</strong><small>Biomedical signals · Evaluation</small></span><span aria-hidden="true">↗</span></a>
+<a href="#dsp"><span class="index-number">03</span><span><strong>Preserve the useful signal</strong><small>Multirate DSP · Polyphase FIR</small></span><span aria-hidden="true">↗</span></a>
+<a href="#simulator"><span class="index-number">04</span><span><strong>Prototype the signal chain</strong><small>Eight-channel EEG · Verification</small></span><span aria-hidden="true">↗</span></a></aside></section>
+<section id="work" class="section container" aria-labelledby="work-title"><div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Engineering, with evidence.</h2></div><p>Start with the outcome.<br>Open the methods, then explore the code.</p></div>
+<div class="projects">
+<article id="crfid-flagship" class="project featured"><div class="project-body"><p class="eyebrow">01 / Flagship research · Tyndall</p><h3>CRFID domain generalisation</h3><p class="project-question">Can a chipless RFID classifier recognise the same tag under an unseen reader geometry?</p><p>I re-examined the evaluation protocol and rebuilt testing around physical-condition groups, separating familiar-condition recognition from transfer to an unseen joint reader geometry.</p><div class="result"><strong>Strict grouped evaluation</strong><span>12,600 spectra · 252 physical-condition blocks · unseen joint reader geometry</span></div><p class="takeaway">Transfer remained near chance. Signal, representation and readout diagnostics established what the tested methods could—and could not—generalise.</p></div>
+<figure class="project-figure"><a href="CRFID-research-website/assets/scientific/measured_spectra_same_tag_across_positions.png" aria-label="View full-size measured CRFID spectra"><img src="CRFID-research-website/assets/scientific/measured_spectra_same_tag_across_positions.png" width="1361" height="755" alt="Measured spectra for one tag change across reader positions P1 to P4." decoding="async"></a><figcaption>One tag, different measurement geometries: the signal shift that the classifier must handle.</figcaption></figure>
+<div class="project-bottom"><details><summary>Methods, findings &amp; scope</summary><div class="detail-content"><h4>Experimental design</h4><p>The existing campaign contains 12,600 spectra in 252 physical-condition blocks. I examined whether repeated sweeps or shared physical conditions could cross split boundaries and inflate apparent generalisation. In the grouped protocol, repeated sweeps stay together; a familiar-condition score does not establish unseen-geometry transfer. P1–P3 supply development data; P4 holds out the joint 150 mm / 45° geometry. Familiar-condition evaluation and target-labelled diagnostics answer separate questions.</p><h4>Technical work</h4><p>Signal preprocessing, a first-difference 1-D CNN, matched ERM/IRM/DANN experiments, source-selection analysis, linear probes and block/seed uncertainty estimates. GroupDRO supplies a further matched comparison. Domain-aware Mixup stopped at its pairing-feasibility gate before training; it has no performance score.</p><h4>What the evidence supports</h4><p>C1 achieved 15.66% accuracy (0.1566) and 0.1122 Macro-F1 at P4 across five seeds, against a 14.29% uniform-chance reference for seven classes. Tested source-only interventions did not establish reliable improvement over their matched controls. Probe results support a representation-transfer limitation, with seed uncertainty; they do not prove all tag information was lost.</p><p>Supporting work included external-dataset checks and an OpenEMS redesign study. The simulated improvement remained below its practical gate; no fabricated RF redesign or hardware classification improvement is claimed.</p><p class="scope">Scope: one acquisition campaign. My contribution is the ML pipeline, experimental evaluation and diagnostics on existing measurements. The figure’s GHz axis is nominal because exact sample-by-sample frequency coordinates are unavailable.</p></div></details><div class="project-links"><a href="CRFID-research-website/">Research case study ↗</a><a href="https://github.com/Derekamethy/CRFID">Code &amp; results ↗</a></div></div></article>
+<article id="eeg" class="project"><div class="project-body"><p class="eyebrow">02 / Biomedical signal processing</p><h3>EEG seizure detection</h3><p class="project-question">Turn multichannel scalp EEG into inspectable, patient-specific seizure events.</p><p>I implemented signal preprocessing, spectral and synchrony features, fold-local feature selection and a Random Forest pipeline, with event-level error analysis.</p><div class="result"><strong>53 / 55 seizure events detected</strong><span>Reported retrospective study · 10 subjects · 580.57 hours</span></div><p class="scope">Retrospective within-subject study; the maintained implementation is recording-aware.</p></div>
+<figure class="project-figure"><a href="EEG-seizure-detection-website/evidence/chb04-delayed-true-positive.png" aria-label="View full-size delayed EEG detection example"><img src="EEG-seizure-detection-website/evidence/chb04-delayed-true-positive.png" width="1239" height="895" alt="A delayed true-positive EEG case linking the alarm probability and event labels to four filtered channels." loading="lazy" decoding="async"></a><figcaption>Looking beyond the aggregate: a delayed detection from the separate error-analysis study.</figcaption></figure>
+<div class="project-bottom"><details><summary>Pipeline, metrics &amp; scope</summary><div class="detail-content"><h4>From signal to event</h4><p>CHB-MIT EDF recordings → 22 bipolar channels → 0.5–50 Hz filtering → 2 s epochs → 1,772 spectral, synchrony and temporal inputs → fold-local Top-30 selection → 500-tree Random Forest → temporal post-processing and event scoring.</p><h4>Reported study results</h4><dl class="metric-list"><dt>Mean subject sensitivity</dt><dd>0.9800</dd><dt>Pooled sensitivity</dt><dd>53/55 = 0.9636</dd><dt>Median subject false alarms</dt><dd>0.2455 events/h</dd><dt>Pooled false alarms</dt><dd>178/580.57 h = 0.3066 events/h</dd><dt>Mean of subject mean delays</dt><dd>10.64 s</dd><dt>Pooled detected-event delay</dt><dd>9.09 s</dd></dl><p>Delays include detected events only. Zero-phase filtering and centred smoothing make these retrospective measurements, not streaming latency.</p><h4>Engineering evidence</h4><p>The maintained code respects recording boundaries and includes synthetic regression tests and CI. Current evaluator changes have not been rerun on the raw cohort. Saved study results therefore remain distinct from current software validation.</p><p class="takeaway">Demonstrates: physiological signal processing, recording-aware evaluation, failure analysis and reproducible software. This is patient-specific research, not neonatal or unseen-patient validation.</p></div></details><div class="project-links"><a href="EEG-seizure-detection-website/">Engineering case study ↗</a><a href="https://github.com/Derekamethy/eeg-seizure-detection">Code &amp; results ↗</a></div></div></article>
+<article id="dsp" class="project"><div class="project-body"><p class="eyebrow">03 / Digital signal processing</p><h3>EEG multirate DSP</h3><p class="project-question">Reduce the sampling rate while protecting the useful EEG analysis band.</p><p>I designed an 8/125 rational conversion and Kaiser FIR, implemented a direct reference, and integrated SciPy’s polyphase resampler using the same coefficients.</p><div class="result"><strong>500 → 32 Hz</strong><span>93.6% fewer samples · protected band: 0.5–12.5 Hz</span></div><p class="scope">Numerical and spectral validation on one 60 s recording; no clinical-performance claim.</p></div>
+<figure class="project-figure"><a href="eeg-multirate-dsp/assets/psd_preservation.png" aria-label="View full-size EEG spectral-preservation figure"><img src="eeg-multirate-dsp/assets/psd_preservation.png" width="1800" height="720" alt="The reference and resampled EEG power spectral densities overlap across the protected analysis band." loading="lazy" decoding="async"></a><figcaption>Validate the spectrum as well as the samples: mean normalised PSD before and after resampling.</figcaption></figure>
+<div class="project-bottom"><details><summary>Filter design, validation &amp; scope</summary><div class="detail-content"><h4>Design</h4><p>L = 8, M = 125; a 4,145-tap Kaiser FIR at the 4 kHz intermediate rate. The 60 dB stopband target measured 59.89 dB on the validation grid. Eight-second windows give 0.125 Hz bin spacing; Hann-window spectral resolution is broader.</p><h4>Saved recording benchmark</h4><dl class="metric-list"><dt>Direct / polyphase MSE</dt><dd>7.77 × 10<sup>−27</sup></dd><dt>Direct / polyphase correlation</dt><dd>1.000000</dd><dt>IWMF RMSE / correlation</dt><dd>0.0412 Hz / 0.9911</dd><dt>Approximate FIR-operation reduction</dt><dd>1,000×</dd><dt>Measured median runtime speed-up</dt><dd>118.79×</dd></dl><p>Equivalence uses the common 1,904-sample prefix, including the start transient; the polyphase output has 1,920 samples. The operation estimate compares against explicit zero-stuffed FIR filtering. Runtime is machine-dependent.</p><p class="takeaway">Demonstrates: specification-driven filter design, implementation equivalence, spectral preservation and computational analysis.</p><p class="scope">The public synthetic demo checks implementation behaviour. The original recording is not redistributed, so it does not reproduce these recording-dependent values.</p></div></details><div class="project-links"><a href="eeg-multirate-dsp/">DSP case study ↗</a><a href="https://github.com/Derekamethy/eeg-multirate-dsp">Code &amp; benchmark ↗</a></div></div></article>
+<article id="simulator" class="project simulator"><div class="project-body"><p class="eyebrow">04 / Engineering prototype</p><h3>Eight-channel EEG simulator</h3><p class="project-question">Make the signal source, device interface and verification path testable before hardware integration.</p><p>I built a Python desktop application for synthetic or recorded EEG, channel controls, timed playback, fault injection and virtual 16-bit DAC mapping.</p><div class="result"><strong>8 channels · 3 verification levels</strong><span>Desktop software and deterministic mock measurements</span></div><p class="scope">Software proof of concept designed for future MCU/DAC integration.</p></div>
+<figure class="project-figure"><a href="assets/eeg-simulator.png" aria-label="View full-size eight-channel simulator screenshot"><img src="assets/eeg-simulator.png" width="3075" height="1868" alt="Python desktop EEG simulator showing eight waveform channels, playback controls, channel conditions and verification results." loading="lazy" decoding="async"></a><figcaption>The implemented application: waveform playback, channel configuration and software-reference verification.</figcaption></figure>
+<div class="project-bottom"><details><summary>Signal chain &amp; implementation boundary</summary><div class="detail-content"><h4>Implemented software</h4><p>Synthetic/NPZ and optional EDF input, monotonic-clock playback, channel selection and digital amplitude scaling. Virtual 16-bit codes represent a configurable ±200 µV target range. Mock device control, protocol tests and deterministic fault scenarios exercise the interface.</p><ol class="signal-chain"><li><strong>EEG → desktop GUI → virtual DAC / mock device</strong><span>Implemented and exercised in software</span></li><li><strong>USB / serial adapter → MCU buffer, timer &amp; DMA</strong><span>Serial skeleton exists; waveform transfer and firmware remain to implement</span></li><li><strong>Multi-channel DAC → analogue scaling → µV output → EEG acquisition</strong><span>Proposed physical path; no measured hardware output</span></li></ol><h4>Verification</h4><p>Separate simulator-output, acquisition and event-timing checks compare deterministic software references. Unit tests and CI cover waveform handling, DAC mapping, protocol behaviour and validation. These checks do not measure a physical acquisition device.</p><p class="takeaway">Demonstrates: signal-chain architecture, interface separation and verification planning for future hardware integration.</p></div></details><div class="project-links"><a href="https://github.com/Derekamethy/eight-channel-eeg-simulator">Code &amp; software demo ↗</a><a href="https://github.com/Derekamethy/eight-channel-eeg-simulator/blob/main/DESIGN_DECISIONS.md">Design decisions ↗</a></div></div></article>
+</div>
+<div class="supporting-work"><p class="eyebrow">Further work</p><div class="supporting-grid"><article><h3>Patient-independent neonatal EEG</h3><p>Single-channel Cz-C3 feature engineering and leave-one-recording-out validation. A 24-feature logistic model balances simplicity and performance; independent-test operating profiles expose sensitivity / false-positive trade-offs.</p><p class="scope">Separate from the CHB-MIT study above. Saved profiles use retrospective centred smoothing.</p><a class="text-link" href="https://github.com/Derekamethy/neonatal-eeg-seizure-detection">Explore code &amp; evidence ↗</a></article><article><h3>Engineering concepts &amp; teamwork</h3><p><strong>INFRACHIP Hackathon, 2026 — winning team concept:</strong> sustainable chipless RFID smart labels for agriculture.</p><p><strong>MedTech Hackathon, 2026:</strong> an edge–cloud EEG monitoring architecture connecting sensing, inference and remote review.</p><p class="scope">Concept and architecture work; not deployed medical or RF products.</p></article></div></div></section>
+<section id="capabilities" class="approach-section section" aria-labelledby="approach-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / Engineering approach</p><h2 id="approach-title">Follow the whole signal chain.</h2></div><p>A model is one part of the system.<br>The evidence has to connect end to end.</p></div><ol class="workflow"><li><span>01</span><h3>Understand the signal</h3><p>Ingestion, channel alignment, filtering and spectral analysis.</p><a href="#dsp">See DSP work →</a></li><li><span>02</span><h3>Design the experiment</h3><p>Choose the unit of independence, holdouts and lawful model selection.</p><a href="#crfid-flagship">See CRFID work →</a></li><li><span>03</span><h3>Model, test, diagnose</h3><p>Compare baselines, quantify uncertainty and inspect failure cases.</p><a href="#eeg">See detection work →</a></li><li><span>04</span><h3>Build &amp; verify</h3><p>Separate interfaces, test signal paths and define implementation limits.</p><a href="#simulator">See prototype work →</a></li></ol><p class="tool-line">Tools evidenced in these projects: <strong>Python · NumPy / SciPy · scikit-learn · PyTorch · Git · automated tests &amp; CI</strong></p></div></section>
+<section id="about" class="section container about" aria-labelledby="about-title"><div><p class="eyebrow">03 / About</p><h2 id="about-title">An engineering foundation.<br>A research mindset.</h2><p>I’m Yangdeyi Yang, a MEngSc candidate in Electrical and Electronic Engineering at University College Cork, with machine-learning research experience at Tyndall National Institute.</p><p>My work connects physical sensing and biomedical signals with experimental design, machine learning and prototype software. I’m interested in signal-processing, sensor-ML and biomedical engineering roles, research engineering and PhD opportunities.</p><a class="text-link" href="cv.html">Education, experience &amp; CV →</a></div><dl class="timeline"><div><dt>2026 · Tyndall National Institute</dt><dd>Machine Learning Research Intern<small>CRFID sensing and generalisation under reader-geometry shift</small></dd></div><div><dt>2025–2026 · University College Cork</dt><dd>MEngSc, Electrical and Electronic Engineering<small>2025–2026 academic year</small></dd></div><div><dt>2020–2024 · Yancheng Institute of Technology</dt><dd>BEng, Intelligent Equipment and Systems</dd></div></dl></section>
+<section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">04 / Contact</p><h2 id="contact-title">Let’s talk engineering.</h2><p>For graduate roles, research opportunities and technical conversations.</p></div><div class="contact-actions"><a href="mailto:124134230@umail.ucc.ie">124134230@umail.ucc.ie ↗</a><a href="cv.html">View / print CV ↗</a><a href="https://github.com/Derekamethy">GitHub / Derekamethy ↗</a></div></div></section>
+</main><footer class="container site-footer"><span>© 2026 Yangdeyi Yang</span><a href="#hero">Back to top ↑</a></footer>
+</body></html>

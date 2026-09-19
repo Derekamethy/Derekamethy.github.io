@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="EEG multirate DSP engineering case study: 500 Hz to 32 Hz resampling, Kaiser anti-alias FIR design, polyphase optimisation, and spectral-preservation validation.">
-  <title>EEG Multirate DSP | Derek Yang</title>
+  <title>EEG Multirate DSP | Yangdeyi Yang</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="site-nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="site-nav" aria-label="DSP case-study navigation">
     <div class="nav-container">
-      <a class="nav-logo" href="#top" aria-label="DSP case study home"><span class="nav-mark">DY</span><span>Derek Yang</span></a>
+      <a class="nav-logo" href="#top" aria-label="DSP case study home"><span class="nav-mark">DY</span><span>Yangdeyi Yang</span></a>
       <ul class="nav-links">
         <li><a href="#problem">Problem</a></li>
         <li><a href="#pipeline">Pipeline</a></li>
@@ -24,7 +25,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main">
     <section id="top" class="hero-section dsp-hero">
       <div class="container hero-grid">
         <div>
@@ -72,7 +73,7 @@
           <article><span>Decimation</span><strong>M = 125</strong><p>retain required phases</p></article><i>→</i>
           <article class="pipeline-output"><span>Output</span><strong>32 Hz</strong><p>1,920 samples / 60 s</p></article>
         </div>
-        <div class="resolution-note"><strong>Aligned spectral grid:</strong> 8 s epochs give <code>500 / 4000 = 32 / 256 = 0.125 Hz</code> resolution on both branches.</div>
+        <div class="resolution-note"><strong>Aligned spectral grid:</strong> 8 s epochs give <code>500 / 4000 = 32 / 256 = 0.125 Hz</code> bin spacing on both branches; Hann-window spectral resolution is broader.</div>
       </div>
     </section>
 
@@ -150,17 +151,17 @@
         <div class="ownership-list">
           <article><span>01</span><h3>Multirate design</h3><p>Defined the exact 8/125 conversion and the protected spectral band.</p></article>
           <article><span>02</span><h3>Filter derivation</h3><p>Derived the Kaiser FIR from passband, stopband, and attenuation requirements.</p></article>
-          <article><span>03</span><h3>Implementation check</h3><p>Built direct-form and polyphase paths and verified numerical equivalence.</p></article>
+          <article><span>03</span><h3>Implementation check</h3><p>Implemented a direct reference and integrated SciPy’s polyphase resampler with the same FIR coefficients; verified numerical equivalence.</p></article>
           <article><span>04</span><h3>Spectral validation</h3><p>Compared PSD shape, sub-band power, entropy, SEF95, and IWMF.</p></article>
           <article><span>05</span><h3>Efficiency analysis</h3><p>Separated theoretical operation-count reduction from measured runtime speed-up.</p></article>
           <article><span>06</span><h3>Reproducibility</h3><p>Added synthetic demo data, regression tests, CI, and a public executable pipeline.</p></article>
         </div>
-        <div class="scope-note"><strong>Scope:</strong> this is a signal-processing and implementation study. It does not claim clinical performance, diagnostic validity, or preservation of frequencies above the 32 Hz output Nyquist limit.</div>
+        <div class="scope-note"><strong>Scope:</strong> results cover one 60 s recording and 14 overlapping epochs. The original recording is not redistributed. Direct/polyphase equivalence uses the common 1,904-sample prefix, including the start transient. This is a signal-processing and implementation study. It does not claim clinical performance, diagnostic validity, or preservation of frequencies above the 32 Hz output Nyquist limit.</div>
         <div class="closing-actions"><a href="https://github.com/Derekamethy/eeg-multirate-dsp" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Inspect the code ↗</a><a href="https://derekamethy.github.io/" class="btn btn-secondary">Back to portfolio</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© 2026 Derek Yang · EEG multirate DSP engineering case study</p></div></footer>
+  <footer class="site-footer"><div class="container"><p>© 2026 Yangdeyi Yang · EEG multirate DSP engineering case study</p></div></footer>
 </body>
 </html>
