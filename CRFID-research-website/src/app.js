@@ -48,7 +48,7 @@
   seedChart.innerHTML = seedRows.map(row => '<div class="chart-row"><span>Seed ' + row[0] + '</span><span class="chart-track"><i class="chart-bar" style="--bar:' + (number(row[2]) / .25 * 100) + '%"></i></span><strong>' + (number(row[2]) * 100).toFixed(2) + '%</strong></div>').join('')
     + '<div class="chart-axis seed-axis"><span>0</span><span>25%</span></div><p class="chart-reference">Dashed line: uniform-random accuracy reference, 14.29%</p>';
   const representationChart = document.querySelector('#representation-chart');
-  representationChart.innerHTML = rows('representation-data').map(row => '<div class="rep-group"><div class="rep-heading"><strong>' + row[0] + '</strong><span>' + (row[0] === 'P4' ? 'Encoder-clean' : 'Familiar') + '</span></div><div class="rep-bars">' + row.slice(1).map((value, i) => '<div class="rep-bar ' + ['raw-key', 'diff-key', 'embed-key'][i] + '" style="--bar:' + number(value) * 100 + '%" data-value="' + number(value).toFixed(3) + '" role="img" aria-label="' + row[0] + ' ' + ['RAW', 'First difference', 'Embedding'][i] + ', Macro-F1 ' + value + '"></div>').join('') + '</div><div class="rep-axis"><span>Bar height: 0–1 Macro-F1</span></div></div>').join('');
+  representationChart.innerHTML = rows('representation-data').map(row => '<div class="rep-group"><div class="rep-heading"><strong>' + row[0] + '</strong><span>' + (row[0] === 'P4' ? 'Unseen by encoder' : 'Used in development') + '</span></div><div class="rep-bars">' + row.slice(1).map((value, i) => '<div class="rep-bar ' + ['raw-key', 'diff-key', 'embed-key'][i] + '" style="--bar:' + number(value) * 100 + '%" data-value="' + number(value).toFixed(3) + '" role="img" aria-label="' + row[0] + ' ' + ['RAW', 'First difference', 'Embedding'][i] + ', Macro-F1 ' + value + '"></div>').join('') + '</div><div class="rep-axis"><span>Bar height: 0–1 Macro-F1</span></div></div>').join('');
   const effectChart = document.querySelector('#effect-chart');
   const x = value => (value + .08) / .16 * 100;
   effectChart.innerHTML = rows('effect-data').map(row => {
@@ -57,21 +57,8 @@
     return '<div class="effect-row"><strong>' + row[0] + '</strong><div class="effect-track" role="img" aria-label="' + row[0] + ' effect ' + signed(delta) + ', 95 percent interval ' + signed(low) + ' to ' + signed(high) + '"><i class="effect-interval" style="--low:' + x(low) + '%;--width:' + (x(high)-x(low)) + '%"></i><i class="effect-dot" style="--point:' + x(delta) + '%"></i></div><span class="effect-value">' + signed(delta) + ' [' + signed(low) + ', ' + signed(high) + ']</span></div>';
   }).join('') + '<div class="chart-axis effect-axis"><span>−0.08</span><span>0</span><span>+0.08</span></div>';
 
-  const panelButtons = Array.from(document.querySelectorAll('[data-panel]'));
-  const showPanel = id => {
-    if (!panelButtons.some(button => button.dataset.panel === id)) return;
-    panelButtons.forEach(button => {
-      const selected = button.dataset.panel === id;
-      button.setAttribute('aria-pressed', String(selected));
-      document.getElementById(button.dataset.panel).hidden = !selected;
-    });
-  };
-  showPanel('representation');
-  panelButtons.forEach(button => button.addEventListener('click', () => showPanel(button.dataset.panel)));
-  document.querySelectorAll('[data-open-panel]').forEach(link => link.addEventListener('click', () => showPanel(link.dataset.openPanel)));
   const openHash = () => {
     const id = decodeURIComponent(location.hash.slice(1));
-    if (['signal', 'representation', 'readout'].includes(id)) showPanel(id);
     const element = document.getElementById(id);
     if (element) {
       for (let parent = element; parent; parent = parent.parentElement) {

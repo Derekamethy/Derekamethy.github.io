@@ -320,3 +320,53 @@ body{background:#fff;color:#000}.wrap{width:100%}.section{padding-block:25px}.he
 .diagnostic-panel[hidden]{display:block!important}.technical{break-inside:avoid}.section-heading{break-after:avoid}
 a{color:inherit}.hero-context{font-size:10pt}.section-heading h2{font-size:26pt}.hero-copy h1{font-size:34pt}
 }
+
+/* A guided case study: physical intuition, experiment, then evidence. */
+html{scroll-behavior:auto}
+.hero-grid{grid-template-columns:1fr 1fr;gap:5%;padding-block:40px 32px}
+.hero h1{font-size:clamp(3rem,5vw,4.5rem)}
+.hero-lead{font-size:1.3rem;color:var(--green);margin-top:23px}
+.role-summary{font-size:.87rem;color:var(--muted);border-left:2px solid var(--green);padding-left:14px;max-width:500px}
+.role-summary strong{color:var(--ink);display:block;margin-bottom:4px}
+.sensor-scene{padding:24px;background:linear-gradient(140deg,#fff,#eaf2ee);border:1px solid var(--line);border-radius:8px}
+.sensor-scene svg{display:block;width:100%;height:auto}
+.sensor-scene figcaption{font-size:.8rem;margin-top:12px}
+.sensor-scene .figure-top{font-size:.75rem;margin-bottom:10px}
+.hero .credit-line{margin-top:0;padding-top:17px;border-top:1px solid var(--line)}
+.section{padding-block:76px}.section-heading h2{font-size:clamp(2rem,3.7vw,3.2rem)}
+.motivation{max-width:830px;margin-top:35px}.motivation h3{font-size:1.6rem}.motivation p{color:var(--muted)}
+.experiment-intro{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center;margin-bottom:35px}
+.experiment-question h3{font-size:2rem;margin-top:14px}.experiment-question p{color:var(--muted)}
+.experiment-intro .geometry-figure{box-shadow:none}.geometry-figure:after{display:none}
+.experiment-intro .geometry-figure figcaption{min-height:0}
+#strict-test .dataset-strip{margin-top:35px}#strict-test .group-explainer{margin-block:35px}
+.decision-note{display:grid;grid-template-columns:230px 1fr;gap:24px;border-left:3px solid var(--green);padding:22px 26px;margin-top:30px;background:var(--sea)}
+.decision-note>span{font-size:.8rem;color:var(--green);font-weight:650}.decision-note p{margin:0;font-size:.94rem;color:var(--ink)}
+.result-grid{grid-template-columns:.65fr 1.35fr;gap:40px;align-items:center}
+.recall-figure{padding:20px;background:#fff;border:1px solid #c7d6e0}.recall-figure img{width:100%}.recall-figure .figure-link{border:0}.recall-figure figcaption{font-size:.83rem}
+.investigation-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-bottom:32px}
+.investigation-map a{position:relative;padding:24px 18px;background:var(--sea);border-top:3px solid var(--green);text-decoration:none}
+.investigation-map a:not(:last-child):after{content:'→';position:absolute;right:-23px;top:43%;color:var(--green)}
+.investigation-map span{display:block;font-size:.8rem;color:var(--green);margin-bottom:15px}.investigation-map strong{font-size:1.05rem;display:block;line-height:1.4}.investigation-map small{display:block;margin-top:12px;color:var(--muted);font-size:.8rem}.investigation-map a:hover strong{text-decoration:underline}
+.diagnostic-panel{margin-top:28px;border-top:3px solid #b7d0c3}.diagnostic-panel,.investigation-map{scroll-margin-top:155px}
+.rep-heading{align-items:start;flex-direction:column;gap:4px}.rep-heading span{font-size:.7rem}.representation-takeaway{align-items:start}.representation-takeaway p{line-height:1.7}
+.adversarial-diagram{padding:25px;background:#fff;border:1px solid var(--line);margin-bottom:24px}.adversarial-diagram svg{display:block;width:100%;height:auto}.adversarial-diagram figcaption{font-size:.84rem}
+.calibration-boundary{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;background:var(--sky);border:1px solid var(--line);padding:28px}
+.calibration-boundary strong{display:block;font-size:1.3rem;margin-top:10px}.calibration-boundary p{font-size:.9rem;color:var(--muted)}.calibration-boundary>span{font-size:1.6rem;color:var(--green)}
+.evidence-section .gate-card{margin-top:0}.old-question{text-decoration:none}
+@media(max-width:1000px){.experiment-intro{gap:30px}.decision-note{grid-template-columns:180px 1fr}.hero h1{font-size:3.2rem}.sensor-scene{padding:16px}}
+@media(max-width:760px){
+.hero{display:block}.hero-grid{display:grid;grid-template-columns:1fr;gap:28px;padding-block:28px}.hero-copy{margin:0}.hero h1{font-size:clamp(2.65rem,9vw,4rem)}.hero .credit-line{margin-top:8px}
+.sensor-scene{padding:16px}.sensor-scene .figure-top{flex-direction:column;gap:3px}.sensor-scene figcaption{font-size:.8rem}
+.section{padding-block:52px}.section-heading h2{font-size:clamp(2rem,7vw,2.8rem)}
+.experiment-intro,.decision-note,.result-grid,.investigation-map{grid-template-columns:1fr;gap:22px}
+.decision-note{padding:20px;gap:8px}.experiment-question h3{font-size:1.65rem}.experiment-intro .geometry-figure{padding:18px}.result-grid{gap:28px}.recall-figure{padding:12px}
+.investigation-map{gap:16px}.investigation-map a{padding:18px}.investigation-map a:not(:last-child):after{display:none}.investigation-map span{margin-bottom:8px}.investigation-map small{margin-top:6px}
+.calibration-boundary{grid-template-columns:1fr;padding:22px;gap:15px}.calibration-boundary>span{transform:rotate(90deg);justify-self:center}.calibration-boundary strong{font-size:1.2rem}
+.adversarial-diagram{padding:15px}.adversarial-diagram svg{min-width:0}
+.diagnostic-panel,.investigation-map{scroll-margin-top:140px}.motivation h3{font-size:1.4rem}
+}
+
+.step-illustration{display:block;width:88px;height:58px;margin-bottom:18px}.step-number{margin-bottom:12px}
+.adversarial-diagram .dann-mobile{display:none}
+@media(max-width:760px){.adversarial-diagram .dann-wide{display:none}.adversarial-diagram .dann-mobile{display:block;width:min(100%,350px);margin-inline:auto}.step-illustration{margin-bottom:14px}}
