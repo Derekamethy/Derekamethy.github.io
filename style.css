@@ -11,6 +11,9 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{margin:16mm}body{background:#fff;color:#182e37;font-size:10pt}.site-header,.skip-link,.site-footer,.no-print{display:none!important}.container{width:100%}.cv{max-width:none;padding:0}.cv h1{font-size:25pt}.cv h2{font-size:13pt}.cv h3{font-size:11pt}.cv p,.cv li{font-size:10pt;line-height:1.45}.cv>section{margin-top:16px;padding-top:12px}.cv h2,.cv h3{break-after:avoid}.cv li{break-inside:avoid}.cv-contact{font-size:9pt}a{text-decoration:none}.cv .eyebrow{font-size:8pt}details{break-inside:avoid}}
 
+/* Language routes share the existing layout while allowing Chinese copy to breathe. */
+.language-switch{border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--ink)!important;font-weight:700}.zh-page{font-family:Inter,"Microsoft YaHei","PingFang SC",system-ui,sans-serif}.zh-page .hero-intro,.zh-page .project-question,.zh-page .project-body p,.zh-page .two-column-copy p{line-height:1.8}.zh-page .eyebrow{letter-spacing:.06em}.zh-page .cv h1,.zh-page h2,.zh-page h3{letter-spacing:-.035em}@media(max-width:680px){.language-switch{padding:4px 7px}.zh-page nav a{letter-spacing:0}.zh-page .project-index strong{line-height:1.45}.zh-page .hero h1{line-height:1.2}}
+
 /* Compact capability overview and recognition beside experience. */
 .strengths{padding-block:30px}.strengths .eyebrow{margin-bottom:0}.strengths .workflow{grid-template-columns:repeat(3,minmax(0,1fr));margin:18px 0 24px}.strengths .workflow h3{margin-top:0}.strengths .workflow a{padding-top:12px}.supporting-single{grid-template-columns:1fr;max-width:760px}.recognition{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}.recognition h3{font-size:1.1rem;margin-bottom:14px}.recognition p{font-size:.85rem!important}.recognition .scope{font-size:.77rem!important}
 @media(max-width:680px){.strengths .workflow{grid-template-columns:1fr;gap:20px}.strengths{padding-block:28px}}
